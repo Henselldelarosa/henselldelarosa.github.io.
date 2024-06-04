@@ -118,7 +118,7 @@ const Homepage2 = ({ posts }) => {
         className="contact-section pt-24 lg:pt-28 xl:pt-32"
       >
         <div className="container mx-auto">
-          <SectionHeading animated={false} title="Contact Us" watermark="Contact" />
+          <SectionHeading animated={false} title="Contact Me" watermark="Contact" />
           <ContactSection />
         </div>
       </Section>

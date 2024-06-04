@@ -181,7 +181,7 @@ const MobileNavigation = ({ changeState }) => {
             className="btn btn-small"
             onClick={() => handleClick()}
           >
-            <span>Hire Me</span>
+            <span>GET IN CONTACT</span>
           </ScrollLink>
         </div>
       </nav>
