@@ -23,7 +23,7 @@ const index = ({ pages }) => {
   return (
     <Layout blurred>
     <Head>
-      <title>Hensell's Portfolio</title>
+      <title>Hensell-Portfolio</title>
     </Head>
 
     {/* Start Hero Section */}
