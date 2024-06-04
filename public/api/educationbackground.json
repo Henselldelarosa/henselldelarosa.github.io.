@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "High School",
+        "meta": "KAPPA International",
+        "text": "I graduated from KAPPA Internation in the Bronx with a IB Dioploma, and a advance regents diploma.",
+        "year": "2011 - 2015"
+    },
+    {
+        "id": 2,
+        "title": "App Academy",
+        "meta": "Coding Bootcamp",
+        "text": "I went to App Academy to better my skills and became a full Stack Software Engineer",
+        "year": "2022 - 2023"
+    }
+]

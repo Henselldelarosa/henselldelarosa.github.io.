@@ -1,0 +1,26 @@
+{
+    "firstName": "Hensell",
+    "lastName": "De La Rosa",
+    "fullName": "Hensell De La Rosa",
+    "thumbImage": "/images/me.jpeg",
+    "largeImage": "/images/me2.jpeg",
+    "bio": "I am a Full-Stack Software Engineer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.",
+    "age": 27,
+    "nationality": "American",
+    "languages": [
+        "English",
+        "Spanish"
+    ],
+    "address": "Freeland, Penssylvania",
+    "freelance": "Available",
+    "socialAddress": {
+        "github": "https://github.com/Henselldelarosa",
+        "linkedin": "https://www.linkedin.com/in/hensell-delarosa/"
+    },
+    "phoneNumbers": [
+        "929-300-1372"
+    ],
+    "emailAddress": [
+        "hensell1000@gmail.com"
+    ]
+}

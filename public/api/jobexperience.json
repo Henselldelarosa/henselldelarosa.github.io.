@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Full-Stack Software Engineer",
+        "meta": "Corsect INC.",
+        "text": "Coursect is a startup company. Their aim is to bring AI tutoring to high school students unsing Open AI to generate questions. The AI is also used to correct the student answers with step to step walkthrough on how to solve each questions. When I was first was brought into this company it was running only using HTML and CSS. During my time here I showed the owner how we could make the the user experience better by using React.js as our front-end, Python Flask for our back-end, and other style sheets for styling the page such as SCSS. I also explain how React makes it easier to maintain and create code by building re-usable components that could be used in many pages of the project.",
+        "year": "2023 - 2024"
+    },
+    {
+        "id": 2,
+        "title": "Full-Stack Software Engineer",
+        "meta": "Modern-Tech LLC",
+        "text": "Moder-Tech is a company that was started by me and other former classmates of mine where we take freelancing contracts and also create applications to better help us and others deliver a better product. Currently we are woking on a promotion application where restaurants can send promotion code to their clients through text messages using Bird API. We are also working on creating a site called DevComponents. This site will help us and others by displaying components that we have build in the pass where anyone can just go in copy the code and use it in their own projects.",
+        "year": "2023 - Current"
+    }
+]

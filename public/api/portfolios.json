@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "title": "Natour Project",
+        "subtitle": "Created by following Jonas Schmedtmann class",
+        "coverimage": "/images/portfolios/natour-image-1.png",
+        "imagegallery": [
+            "/images/portfolios/natour-image-2.png",
+            "/images/portfolios/natour-image-3.png",
+            "/images/portfolios/natour-image-4.png",
+            "/images/portfolios/natour-image-5.png",
+            "/images/portfolios/natour-image-6.png",
+            "/images/portfolios/natour-image-7.png",
+            "/images/portfolios/natour-image-8.png"
+        ],
+        "videogallery": false,
+        "url": "",
+        "filters": ["css","html", "scss"]
+    },
+    {
+        "id": 2,
+        "title": "Question-Overflow",
+        "subtitle": "Stack-Overflow clone for general questions",
+        "coverimage": "/images/portfolios/question-overflow-image-1.png",
+        "imagegallery": [
+            "/images/portfolios/question-overflow-image-1.png",
+            "/images/portfolios/question-overflow-image-2.png",
+            "/images/portfolios/question-overflow-image-3.png",
+            "/images/portfolios/question-overflow-image-4.png",
+            "/images/portfolios/question-overflow-image-5.png",
+            "/images/portfolios/question-overflow-image-6.png",
+            "/images/portfolios/question-overflow-image-7.png"
+        ],
+        "videogallery": false,
+        "url": "https://question-overflow-2s4k.onrender.com/",
+        "filters": ["react", "python", "css"]
+    },
+    {
+        "id": 3,
+        "title": "Airbnb Clone",
+        "subtitle": "This is my first full stack project from bootcamp",
+        "coverimage": "/images/portfolios/airbnb-image-1.png",
+        "imagegallery": [
+            "/images/portfolios/airbnb-image-1.png",
+            "/images/portfolios/airbnb-image-2.png",
+            "/images/portfolios/airbnb-image-3.png",
+            "/images/portfolios/airbnb-image-4.png",
+            "/images/portfolios/airbnb-image-5.png",
+            "/images/portfolios/airbnb-image-6.png",
+            "/images/portfolios/airbnb-image-7.png",
+            "/images/portfolios/airbnb-image-8.png",
+            "/images/portfolios/airbnb-image-9.png"
+        ],
+        "videogallery": false,
+        "url": "https://air-bnb-clone-zhb4.onrender.com",
+        "filters": ["express", "react", "node", "css"]
+    },
+    {
+        "id": 4,
+        "title": "Facebook Clone",
+        "subtitle": "This is my capstone project from bootcamp",
+        "coverimage": "/images/portfolios/facebook-image-1.png",
+        "imagegallery": [
+            "/images/portfolios/facebook-image-1.png",
+            "/images/portfolios/facebook-image-2.png",
+            "/images/portfolios/facebook-image-3.png",
+            "/images/portfolios/facebook-image-4.png",
+            "/images/portfolios/facebook-image-5.png",
+            "/images/portfolios/facebook-image-6.png",
+            "/images/portfolios/facebook-image-7.png",
+            "/images/portfolios/facebook-image-8.png",
+            "/images/portfolios/facebook-image-9.png",
+            "/images/portfolios/facebook-image-10.png"
+        ],
+        "videogallery": false,
+        "url": "https://sagebook.onrender.com",
+        "filters": ["react", "python", "scss"]
+    },
+    {
+        "id": 5,
+        "title": "Courset",
+        "subtitle": "This is a startup compnay that I worked for a year",
+        "coverimage": "/images/portfolios/courset-image-1.png",
+        "imagegallery": [
+            "/images/portfolios/courset-image-1.png",
+            "/images/portfolios/courset-image-2.png",
+            "/images/portfolios/courset-image-3.png",
+            "/images/portfolios/courset-image-4.png",
+            "/images/portfolios/courset-image-5.png",
+            "/images/portfolios/courset-image-6.png",
+            "/images/portfolios/courset-image-7.png",
+            "/images/portfolios/courset-image-8.png"
+        ],
+        "videogallery": false,
+        "url": "https://coursect.org/",
+        "filters": ["python", "scss", "react"]
+    }
+
+]

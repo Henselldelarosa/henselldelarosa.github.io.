@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "Javascript",
+        "percentage": 85
+    },
+    {
+        "id": 2,
+        "title": "Node Js",
+        "percentage": 90
+    },
+    {
+        "id": 3,
+        "title": "React & Redux",
+        "percentage": 90
+    },
+    {
+        "id": 4,
+        "title": "React Native",
+        "percentage": 50
+    },
+    {
+        "id": 5,
+        "title": "Html & Css",
+        "percentage": 95
+    },
+    {
+        "id": 6,
+        "title": "SCSS",
+        "percentage": 90
+    },
+    {
+        "id": 7,
+        "title": "Firebase & Firestore",
+        "percentage": 75
+    },
+    {
+        "id": 8,
+        "title": "Python",
+        "percentage": 80
+    },
+    {
+        "id": 9,
+        "title": "Flask",
+        "percentage": 80
+    },
+    {
+        "id": 10,
+        "title": "Express",
+        "percentage": 75
+    },
+    {
+        "id": 11,
+        "title": "Postgress",
+        "percentage": 75
+    },
+    {
+        "id": 12,
+        "title": "MySQL",
+        "percentage": 75
+    },
+    {
+        "id": 12,
+        "title": "AWS",
+        "percentage": 75
+    },
+    {
+        "id": 12,
+        "title": "RESTful API",
+        "percentage": 89
+    }
+]
