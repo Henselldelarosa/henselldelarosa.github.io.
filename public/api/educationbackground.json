@@ -8,9 +8,16 @@
     },
     {
         "id": 2,
+        "title": "New York City College Of Technology",
+        "meta": "College",
+        "text": "Went to college and major in Computer Science and left after 6 semesters",
+        "year": "2015 - 2020"
+    },
+    {
+        "id": 3,
         "title": "App Academy",
         "meta": "Coding Bootcamp",
-        "text": "I went to App Academy to better my skills and became a full Stack Software Engineer",
+        "text": "I went to App Academy to get more hands on experience on software engineering",
         "year": "2022 - 2023"
     }
 ]

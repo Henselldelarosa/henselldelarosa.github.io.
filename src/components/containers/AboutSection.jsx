@@ -71,34 +71,34 @@ const AboutSection = () => {
                 : {data.lastName}
               </li>
             )}
-            {data.age && (
+            {/* {data.age && (
               <li className="text-lg">
                 <strong className="inline-block min-w-[120px] font-medium">
                   Age{" "}
                 </strong>
                 : {data.age} years
               </li>
-            )}
-            {data.nationality && (
+            )} */}
+            {/* {data.nationality && (
               <li className="text-lg">
                 <strong className="inline-block min-w-[120px] font-medium">
                   Nationality{" "}
                 </strong>
                 : {data.nationality}
               </li>
-            )}
+            )} */}
             {data.languages.length ? (
               <li className="text-lg">
                 <strong className="inline-block min-w-[120px] font-medium">
                   Languages{" "}
                 </strong>
-                : {'English, Spanish'}
+                : {data.languages.join(", ")}
               </li>
             ) : null}
             {data.address && (
               <li className="text-lg">
                 <strong className="inline-block min-w-[120px] font-medium">
-                  Address{" "}
+                  Location{" "}
                 </strong>
                 : {data.address}
               </li>
@@ -109,6 +109,14 @@ const AboutSection = () => {
                   Freelance{" "}
                 </strong>
                 : {data.freelance}
+              </li>
+            )}
+              {data.hobbies && (
+              <li className="text-lg">
+                <strong className="inline-block min-w-[120px] font-medium">
+                  Hobbies{" "}
+                </strong>
+                : {data.hobbies.join(", ")}
               </li>
             )}
           </ul>
