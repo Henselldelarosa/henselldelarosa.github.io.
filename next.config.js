@@ -2,14 +2,11 @@ const withPlugins = require("next-compose-plugins");
 const withPWA = require("next-pwa");
 const runtimeCaching = require("next-pwa/cache");
 
-const repo = "henselldelarosa.github.io."; // <-- IMPORTANT: your repo name
-
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  basePath: `/${repo}`,
-  assetPrefix: `/${repo}/`,
   images: { unoptimized: true },
+  trailingSlash: true,
 };
 
 module.exports = withPlugins(
