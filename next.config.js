@@ -1,6 +1,10 @@
-const withPlugins = require("next-compose-plugins");
-const withPWA = require("next-pwa");
 const runtimeCaching = require("next-pwa/cache");
+
+const withPWA = require("next-pwa")({
+  dest: "public",
+  disable: process.env.NODE_ENV === "development",
+  runtimeCaching,
+});
 
 const nextConfig = {
   reactStrictMode: true,
@@ -9,18 +13,4 @@ const nextConfig = {
   trailingSlash: true,
 };
 
-module.exports = withPlugins(
-  [
-    [
-      withPWA,
-      {
-        pwa: {
-          disable: process.env.NODE_ENV === "development",
-          dest: "public",
-          runtimeCaching,
-        },
-      },
-    ],
-  ],
-  nextConfig
-);
+module.exports = withPWA(nextConfig);
