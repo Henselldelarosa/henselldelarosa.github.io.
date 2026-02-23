@@ -2,7 +2,7 @@ const withPlugins = require("next-compose-plugins");
 const withPWA = require("next-pwa");
 const runtimeCaching = require("next-pwa/cache");
 
-const repo = "my-portfolio"; // <-- IMPORTANT: your repo name
+const repo = "henselldelarosa.github.io."; // <-- IMPORTANT: your repo name
 
 const nextConfig = {
   reactStrictMode: true,
