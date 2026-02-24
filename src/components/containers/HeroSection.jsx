@@ -18,9 +18,8 @@ const HeroSection = ({ blurred, scroll = true, typed = true }) => {
         <div className="herosection-bg absolute left-0 top-0 h-full w-full"></div>
       )}
       <div
-        className={`herosection-content relative z-20 bg-grey-darken  ${
-          blurred ? "bg-opacity-20" : "bg-opacity-90"
-        }`}
+        className={`herosection-content relative z-20 bg-grey-darken  ${blurred ? "bg-opacity-20" : "bg-opacity-90"
+          }`}
       >
         <div className="container relative mx-auto">
           <div className="flex min-h-screen w-full items-center justify-center">
@@ -48,26 +47,28 @@ const HeroSection = ({ blurred, scroll = true, typed = true }) => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.4 }}
+                transition={{ duration: 1, delay: 0.4 }}
                 variants={childrenAnimation}
                 className="mb-5 text-heading"
               >
-                <span className="block sm:inline">Hi, I am</span>{" "}
-                {typed ? (
+                {/* <span className="block sm:inline">Hi, I am</span>{" "} */}
+                {typed && data?.fullName ? (
                   <ReactTyped
-                    loop
-                    typeSpeed={100}
-                    backSpeed={20}
-                    backDelay={2000}
+                    key={data.fullName}
                     strings={[
                       data.fullName,
-                      "a Full-Stack Software Engineer",
-                      "a Web Designer",
+                      "Full-Stack Software Engineer",
+                      "SaaS &amp; Logistics Systems Architect"
                     ]}
+                    typeSpeed={55}
+                    backSpeed={30}
+                    backDelay={1200}
                     className="text-primary"
+                    fadeOut
+                    loop
                   />
                 ) : (
-                  <span className="text-primary">{data.fullName}</span>
+                  <span className="text-primary">{data.fullName || ""}</span>
                 )}
               </motion.h1>
               <motion.p

@@ -1,65 +1,23 @@
 [
     {
         "id": 1,
-        "title": "Delivery Driver/Cook",
-        "meta": "Beyond Sushi",
-        "text": "Bike delievery to customers and prepare sushi",
-        "year": "2015 - 2017"
+        "title": "Logistics & Operations Experience",
+        "meta": "",
+        "text": "* Managed time-sensitive delivery routes and logistics coordination.\n * Maintained performance under strict operational deadlines.\n * Developed strong workflow awareness and process optimization mindset.\n * Gained real-world exposure to supply chain operations and yard management.",
+        "year": "2015 - 2023"
     },
     {
         "id": 2,
-        "title": "Grill Cook",
-        "meta": "McDonald",
-        "text": "Worked the grill ",
-        "year": "2015 - 2016"
+        "title": "Full-Stack Software Engineer",
+        "meta": "Modern Technology LLC",
+        "text": "* Architected and developed Yard-iQ (Yard Management System) for trailer tracking and warehouse operations.\n * Designed full-stack system using Next.js, Node.js, and relational database architecture.\n * Implemented role-based dashboards and workflow automation for logistics facilities.\n * Built RESTful APIs and integrated third-party systems. \n * Deployed CI/CD pipelines using GitHub Actions.\n * Structured SaaS pricing model ($2K–$3K per facility/month).\n * Leading pilot deployment in live warehouse environment.",
+        "year": "2023 - Present"
     },
     {
         "id": 3,
-        "title": "Kitchen Manager in Training",
-        "meta": "Chipotle Mexican Grill",
-        "text": "In charge of running the kitchen and making food order.",
-        "year": "2016 - 2020"
-    },
-        {
-        "id": 4,
-        "title": "Delivery Driver",
-        "meta": "Uber Eats",
-        "text": "Delivering food to customers on a bike and by car.",
-        "year": "2019 - 2022"
-    },
-    {
-        "id": 5,
-        "title": "Janitor",
-        "meta": "Retro Fitness",
-        "text": "Cleaning the gym after it has closed down for the day.",
-        "year": "2019 - 2020"
-    },
-    {
-        "id": 6,
-        "title": "Truck Driver",
-        "meta": "Amazon",
-        "text": "Deliver Amazon trailer from one facility to another to go out for delivery.",
-        "year": "2020 - 2023"
-    },
-    {
-        "id": 7,
-        "title": "Full-Stack Software Engineer",
-        "meta": "Corsect INC.",
-        "text": "Coursect is a startup company. Their aim is to bring AI tutoring to high school students unsing Open AI to generate questions. The AI is also used to correct the student answers with step to step walkthrough on how to solve each questions. When I was first was brought into this company it was running only using HTML and CSS. During my time here I showed the owner how we could make the the user experience better by using React.js as our front-end, Python Flask for our back-end, and other style sheets for styling the page such as SCSS. I also explain how React makes it easier to maintain and create code by building re-usable components that could be used in many pages of the project.",
-        "year": "2023 - 2024"
-    },
-    {
-        "id": 6,
-        "title": "Truck Driver",
-        "meta": "JB Hunt",
-        "text": "In this role I deliver product for one of JB Hunt accounts to distributers that will then take this product and take them to different locations such as Walmart to be sold. Every delivery is very time sensitive and being on time is a must, which means that time management is a must. If a driver doesn't arrive by their appoiment time then the load must be returned back to warehouse which then must be shipped out again.",
-        "year": "2023 - Present"
-    },
-    {
-        "id": 8,
-        "title": "Full-Stack Software Engineer",
-        "meta": "Modern-Tech LLC",
-        "text": "I was hired by Modern-Tech to help get and complete contracts as a freelancer. A few of this contracts have been a online menu for a sushi restaurant, a SMS application for bussiness to be able to send out cupons to customers through text, and current we are working on a Yard Management System that will be tested and used by a fortune 300 company.",
-        "year": "2023 - Present"
+        "title": "Courset INC",
+        "meta": "Full-Stack Software Engineer",
+        "text": "* Refactored frontend from static HTML/CSS to React-based architecture.\n * Introduced reusable component system improving maintainability.\n * Assisted in implementing Python Flask backend integrations.\n * Improved user experience and performance across student-facing modules.\n * Contributed to AI-driven educational tooling using OpenAI APIs.",
+        "year": "2023 – 2024"
     }
 ]

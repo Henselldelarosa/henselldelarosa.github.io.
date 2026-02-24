@@ -42,9 +42,9 @@ const AboutSection = () => {
           variants={childrenAnimation}
           className="about-content"
         >
-          <h3>
+          {/* <h3>
             Hi, I am <span className="text-primary">Hensell De La Rosa</span>
-          </h3>
+          </h3> */}
           <ul className="styledlist">
             {data.firstName && (
               <li className="text-lg">
@@ -94,20 +94,20 @@ const AboutSection = () => {
                 : {data.address}
               </li>
             )}
-            {data.freelance && (
+            {data.OpenTo && (
               <li className="text-lg">
                 <strong className="inline-block min-w-[120px] font-medium">
-                  Freelance{" "}
+                  Open To{" "}
                 </strong>
-                : {data.freelance}
+                : {data.OpenTo}
               </li>
             )}
-              {data.hobbies && (
+              {data.Interests && (
               <li className="text-lg">
                 <strong className="inline-block min-w-[120px] font-medium">
-                  Hobbies{" "}
+                  Interests{" "}
                 </strong>
-                : {data.hobbies.join(", ")}
+                : {data.Interests}
               </li>
             )}
           </ul>

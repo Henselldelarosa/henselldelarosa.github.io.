@@ -4,15 +4,15 @@
     "fullName": "Hensell De La Rosa",
     "thumbImage": "/images/me.jpeg",
     "largeImage": "/images/me2.jpeg",
-    "bio": "I am a Full-Stack Software Engineer. I can provide clean code and pixel perfect design. I also make website based on customers needs such as payment processing for business. I also create software that others can use to help them provide better services to others.",
-    "age": 27,
+    "bio": "Full-Stack Software Engineer & Founder of Modern Technology LLC. Architecting logistics and enterprise systems that solve real operational problems. Specialized in React, Next.js, Node.js, API design, and scalable SaaS applications. Full-Stack Software Engineer & Founder of Modern Technology LLC. Architecting logistics and enterprise systems that solve real operational problems. Specialized in React, Next.js, Node.js, API design, and scalable SaaS applications.",
+    "age": 29,
     "nationality": "American",
     "languages": [
         "English",
         "Spanish"
     ],
-    "address": "Freeland, Penssylvania",
-    "freelance": "Available",
+    "Address": "Freeland, Penssylvania",
+    "OpenTo": "Full-time (Software Engineer / Dynamics / Full-Stack) • Contract",
     "socialAddress": {
         "github": "https://github.com/Henselldelarosa",
         "linkedin": "https://www.linkedin.com/in/hensell-delarosa/"
@@ -23,8 +23,5 @@
     "emailAddress": [
         "hensell1000@gmail.com"
     ],
-    "hobbies": [
-        "Gaming",
-        "Gym"
-    ]
+    "Interests": "Product building, systems design, automation"
 }

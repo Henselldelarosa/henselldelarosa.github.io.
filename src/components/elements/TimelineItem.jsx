@@ -1,4 +1,4 @@
-const TimelineItem = ({ timeline: { title, meta, text, year } }) => {
+const TimelineItem = ({ timeline: { title, meta, text, year,index } }) => {
     return (
         <div className="timeline relative block items-start rounded-full border-white border-opacity-20 first:mt-0 md:flex">
             <span className="timeline-year absolute top-0 left-12 mt-7 mr-12 min-w-[115px] rounded-full bg-primary bg-opacity-10 p-1 text-center text-sm leading-none md:relative md:left-0">
@@ -11,7 +11,9 @@ const TimelineItem = ({ timeline: { title, meta, text, year } }) => {
                 </span>
                 <h5 className="mb-0 text-primary">{title}</h5>
                 <p className="mb-2 text-heading">{meta}</p>
-                <p>{text}</p>
+                {text.split('\n').map((line, index) => (
+                    <p key={index}> {line}</p>
+                ))}
             </div>
         </div>
     );
