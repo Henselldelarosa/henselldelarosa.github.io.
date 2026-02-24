@@ -6,11 +6,9 @@ const withPWA = require("next-pwa")({
   runtimeCaching,
 });
 
-const nextConfig = {
+module.exports = withPWA({
   reactStrictMode: true,
   output: "export",
   images: { unoptimized: true },
   trailingSlash: true,
-};
-
-module.exports = withPWA(nextConfig);
+});
