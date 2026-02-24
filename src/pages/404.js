@@ -1,9 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumb } from "../components/elements";
 import { Layout } from "../components/layout";
-import { toBase64, shimmer, imageLoader } from "../lib/utils";
 
 const NotFound = () => {
   return (
@@ -18,17 +16,11 @@ const NotFound = () => {
         <div className="not-found-wrapper pb-24 pt-10 lg:pt-14 lg:pb-28 xl:pt-16 xl:pb-32">
           <div className="container mx-auto">
             <div className="not-found text-center">
-              <Image
-                loader={imageLoader}
-                unoptimized={true}
+              <img
                 src="/images/notfound.svg"
                 height={500}
                 width={500}
                 alt="not found"
-                placeholder="blur"
-                blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                  shimmer(500, 500)
-                )}`}
               />
               <div>
                 <Link href="/">

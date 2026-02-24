@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
 import { createSlug } from "../../lib";
-import { imageLoader, shimmer, toBase64 } from "../../lib/utils";
 
 const Blog = ({ post: { title, date, thumb, category, slug } }) => {
   return (
@@ -9,19 +7,12 @@ const Blog = ({ post: { title, date, thumb, category, slug } }) => {
       <div className="blog-top relative mb-4">
         <Link href={`/postdetails/${slug}`}>
           <a className="fiximage hover-scale block" title={title}>
-            <Image
-              loader={imageLoader}
-              unoptimized={true}
+            <img
               src={thumb}
               height={240}
               width={400}
               alt="Blog Image"
-              layout="responsive"
-              objectFit="cover"
-              placeholder="blur"
-              blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                shimmer(400, 240)
-              )}`}
+              style={{ objectFit: "cover" }}
             />
           </a>
         </Link>

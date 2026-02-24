@@ -1,8 +1,6 @@
-import Image from "next/image";
 import { RiArrowDownLine } from "react-icons/ri";
 import { Link } from "react-scroll";
 import { SocialIcons } from "../elements";
-import { imageLoader, shimmer, toBase64 } from "../../lib/utils";
 import { motion } from "framer-motion";
 import { childrenAnimation } from "../../lib/motion";
 import { useQuery } from "react-query";
@@ -37,19 +35,12 @@ const HeroSection = ({ blurred, scroll = true, typed = true }) => {
               >
                 <span className="herosection-imageanimation absolute left-0 top-0 z-10 h-full w-full animate-spin rounded-full bg-gradient-to-tr from-primary to-transparent"></span>
                 <div className="herosection-image fiximage relative z-20 inline-block h-[150px] w-[150px] overflow-hidden rounded-full border-6 border-primary border-opacity-10 align-middle">
-                  <Image
-                    loader={imageLoader}
-                    unoptimized={true}
+                  <img
                     src={data.thumbImage}
                     alt={data.fullName}
                     height={150}
                     width={150}
-                    objectFit="cover"
-                    layout="responsive"
-                    placeholder="blur"
-                    blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                      shimmer(150, 150)
-                    )}`}
+                    style={{ objectFit: "cover" }}
                   />
                 </div>
               </motion.div>

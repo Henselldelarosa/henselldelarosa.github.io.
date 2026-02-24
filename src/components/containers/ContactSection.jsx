@@ -24,14 +24,14 @@ const ContactSection = () => {
         <div className="contact-information">
           <h4>Contact Information</h4>
 
-          <span className="inline-block h-1 w-20 rounded-full bg-primary bg-opacity-20"></span>
+          {/* <span className="inline-block h-1 w-20 rounded-full bg-primary bg-opacity-20"></span> */}
           <div className="contact-blocks mt-5 space-y-5">
             <div className="contact-block card flex p-4 md:p-5">
               <span className="icon mr-4 inline-flex h-16 w-16 shrink-0 grow-0 basis-16 items-center justify-center rounded-full bg-primary bg-opacity-10 text-3xl text-primary">
                 <RiPhoneLine />
               </span>
               <div className="content">
-                <h5 className="mb-2">Contact on phone</h5>
+                <h5 className="mb-2">Contact by phone</h5>
                 {data.phoneNumbers.map((number, index) => (
                   <p className="mb-0" key={index}>
                     <Link href={`tel:${number.split("-").join("")}`}>

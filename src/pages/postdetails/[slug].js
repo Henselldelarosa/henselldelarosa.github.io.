@@ -3,11 +3,9 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import { marked } from "marked";
-import Image from "next/image";
 import Link from "next/link";
 import { createSlug } from "../../lib";
 import { getPostsPath, getSinglePost } from "../../lib/blogging";
-import { imageLoader, shimmer, toBase64 } from "../../lib/utils";
 import { Breadcrumb } from "../../components/elements";
 import { Layout } from "../../components/layout";
 import { Spinner } from "../../components/utils";
@@ -55,19 +53,12 @@ const PostPage = ({ title, date, cover, category, content }) => {
         <div className="container mx-auto">
           <div className="post-header mb-8">
             <div className="fiximage mb-5 overflow-hidden rounded border border-white border-opacity-20">
-              <Image
-                loader={imageLoader}
-                unoptimized={true}
+              <img
                 src={cover}
                 height={650}
                 width={1350}
                 alt="Blog Image"
-                layout="responsive"
-                objectFit="cover"
-                placeholder="blur"
-                blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                  shimmer(1350, 650)
-                )}`}
+                style={{ objectFit: "cover" }}
               />
             </div>
             <div className="flex flex-wrap justify-between gap-x-4">

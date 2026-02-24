@@ -1,9 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { RiCloseLine, RiMenuLine } from "react-icons/ri";
 import { useQuery } from "react-query";
 import { getInformation } from "../../fetchers";
-import { imageLoader } from "../../lib/utils";
 
 const Sidemenu = ({ fullMenu, fullMenuHandler }) => {
   const { data } = useQuery("information", getInformation);
@@ -15,15 +13,11 @@ const Sidemenu = ({ fullMenu, fullMenuHandler }) => {
       <div className="h-[40%] w-full">
         <Link href="/homepage1">
           <a className="herosection-image fiximage relative z-20 inline-block h-[60px] w-[60px] overflow-hidden rounded-full border-2 border-primary align-middle">
-            <Image
-              loader={imageLoader}
-              unoptimized={true}
+            <img
               src={data.thumbImage}
               alt={data.fullName}
               height={60}
               width={60}
-              layout="responsive"
-              priority={true}
             />
           </a>
         </Link>

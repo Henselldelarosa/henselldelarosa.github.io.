@@ -1,10 +1,8 @@
 import FsLightbox from "fslightbox-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { RiExternalLinkLine, RiImageLine, RiVideoLine } from "react-icons/ri";
 import { Portal } from "react-portal";
-import { imageLoader, shimmer, toBase64 } from "../../lib/utils";
 
 const Portfolio = ({
   portfolio: { title, subtitle, coverimage, imagegallery, videogallery, url },
@@ -16,18 +14,11 @@ const Portfolio = ({
     <div className="portfolio card hovercard group p-4 md:p-5">
       <div className="portfolio-top relative overflow-hidden">
         <div className="portfolio-image fiximage blur-0 filter transition-all duration-500 group-hover:blur">
-          <Image
-            loader={imageLoader}
-            unoptimized={true}
+          <img
             src={coverimage}
             height={384}
             width={550}
             alt={title}
-            layout="responsive"
-            placeholder="blur"
-            blurDataURL={`data:image/svg+xml;base64,${toBase64(
-              shimmer(550, 384)
-            )}`}
           />
         </div>
         <div className="portfolio-hovercontent absolute left-0 top-0 z-20 flex h-full w-full -translate-x-full transform items-center justify-center gap-4 overflow-hidden bg-grey bg-opacity-80 transition-all duration-500 group-hover:translate-x-0">

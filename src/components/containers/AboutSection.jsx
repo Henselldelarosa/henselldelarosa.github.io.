@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { imageLoader, shimmer, toBase64 } from "../../lib/utils";
 import { motion } from "framer-motion";
 import { childrenAnimation } from "../../lib/motion";
 import { getInformation } from "../../fetchers";
@@ -26,18 +24,11 @@ const AboutSection = () => {
             <span className="absolute top-auto -bottom-2.5 left-auto z-10 h-2.5 w-10 animate-ledgerrightleft rounded-full bg-gradient-to-r from-primary to-transparent"></span>
             <span className="absolute -left-2.5 top-auto z-10 h-10 w-2.5 animate-ledgerbottomtop rounded-full bg-gradient-to-t from-transparent to-primary"></span>
             <span className="absolute left-auto -right-2.5 z-10 h-10 w-2.5 animate-ledgertopbottom rounded-full bg-gradient-to-b from-transparent to-primary"></span>
-            <Image
-              loader={imageLoader}
-              unoptimized={true}
+            <img
               src={data.largeImage}
               height={422}
               width={660}
-              layout="responsive"
               alt={data.fullName}
-              placeholder="blur"
-              blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                shimmer(660, 422)
-              )}`}
             />
           </div>
         </motion.div>
