@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { childrenAnimation } from "../../lib/motion";
 import { useQuery } from "react-query";
 import { getInformation } from "../../fetchers";
-import ReactTyped from "react-typed";
 
 const HeroSection = ({ blurred, scroll = true, typed = true }) => {
   const { data } = useQuery("information", getInformation);
@@ -24,6 +23,74 @@ const HeroSection = ({ blurred, scroll = true, typed = true }) => {
         <div className="container relative mx-auto">
           <div className="flex min-h-screen w-full items-center justify-center">
             <div className="herosection-content w-full py-20 text-center md:w-3/4">
+              <motion.h1
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.1 }}
+                variants={childrenAnimation}
+                className="mb-2 text-heading"
+              >
+                <span className="text-primary">Hensell De La Rosa</span>
+              </motion.h1>
+              <motion.p
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.2 }}
+                variants={childrenAnimation}
+                className="mb-2 text-lg font-medium opacity-90"
+              >
+                Full-Stack Software Engineer — UI-Focused | React, Tailwind, Python &amp; Flask
+              </motion.p>
+              <motion.p
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.3 }}
+                variants={childrenAnimation}
+                className="lead mb-5 max-w-2xl mx-auto"
+              >
+                I build workflow-heavy web apps with clean UI and secure backend systems (RBAC, JWT, SQL).
+              </motion.p>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.35 }}
+                variants={childrenAnimation}
+                className="mb-5 flex flex-wrap items-center justify-center gap-3"
+              >
+                <Link
+                  to="section-portfolios"
+                  spy={true}
+                  smooth={true}
+                  offset={-74}
+                  duration={1000}
+                  className="btn"
+                >
+                  <span>View Projects</span>
+                </Link>
+                <a
+                  href="/Hensells-Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-transparent"
+                >
+                  <span> Resume (PDF)</span>
+                </a>
+              </motion.div>
+              <motion.p
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.4 }}
+                variants={childrenAnimation}
+                className="mb-5 text-sm opacity-80 max-w-xl mx-auto"
+              >
+                Built a Yard Management System supporting role-based permissions and multi-user operational workflows.
+
+              </motion.p>
               <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -32,7 +99,7 @@ const HeroSection = ({ blurred, scroll = true, typed = true }) => {
                 variants={childrenAnimation}
                 className="herosection-imagewrapper relative mb-5 inline-block overflow-hidden rounded-full align-middle"
               >
-                <span className="herosection-imageanimation absolute left-0 top-0 z-10 h-full w-full animate-spin rounded-full bg-gradient-to-tr from-primary to-transparent"></span>
+                <span className="herosection-imageanimation absolute left-0 top-0 z-10 h-full w-full rounded-full bg-gradient-to-tr from-primary to-transparent"></span>
                 <div className="herosection-image fiximage relative z-20 inline-block h-[150px] w-[150px] overflow-hidden rounded-full border-6 border-primary border-opacity-10 align-middle">
                   <img
                     src={data.thumbImage}
@@ -43,44 +110,6 @@ const HeroSection = ({ blurred, scroll = true, typed = true }) => {
                   />
                 </div>
               </motion.div>
-              <motion.h1
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0.4 }}
-                variants={childrenAnimation}
-                className="mb-5 text-heading"
-              >
-                {/* <span className="block sm:inline">Hi, I am</span>{" "} */}
-                {typed && data?.fullName ? (
-                  <ReactTyped
-                    key={data.fullName}
-                    strings={[
-                      data.fullName,
-                      "Full-Stack Software Engineer",
-                      "SaaS &amp; Logistics Systems Architect"
-                    ]}
-                    typeSpeed={55}
-                    backSpeed={30}
-                    backDelay={1200}
-                    className="text-primary"
-                    fadeOut
-                    loop
-                  />
-                ) : (
-                  <span className="text-primary">{data.fullName || ""}</span>
-                )}
-              </motion.h1>
-              <motion.p
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.6 }}
-                variants={childrenAnimation}
-                className="lead mb-0"
-              >
-                {data.bio}
-              </motion.p>
               <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -106,7 +135,7 @@ const HeroSection = ({ blurred, scroll = true, typed = true }) => {
                 activeClass="active"
                 to="section-about"
                 spy={true}
-                smooth="easeInQuad"
+                smooth={true}
                 offset={-74}
                 duration={1000}
                 className="cursor-pointer text-xs font-medium uppercase tracking-widest transition-all hover:text-primary"
