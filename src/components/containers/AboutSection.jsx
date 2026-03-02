@@ -19,7 +19,7 @@ const AboutSection = () => {
           variants={childrenAnimation}
           className="about-image overflow-hidden rounded-lg"
         >
-          <div className="about-image-inner fiximage relative border-10 border-primary border-opacity-20">
+          <div className="about-image-inner fiximage relative border-10 border-primary border-opacity-20 w-auto ">
             <span className="absolute -top-2.5 left-0 z-10 h-2.5 w-10 animate-ledgerleftright rounded-full bg-gradient-to-r from-transparent to-primary"></span>
             <span className="absolute top-auto -bottom-2.5 left-auto z-10 h-2.5 w-10 animate-ledgerrightleft rounded-full bg-gradient-to-r from-primary to-transparent"></span>
             <span className="absolute -left-2.5 top-auto z-10 h-10 w-2.5 animate-ledgerbottomtop rounded-full bg-gradient-to-t from-transparent to-primary"></span>
@@ -33,14 +33,14 @@ const AboutSection = () => {
           </div>
         </motion.div>
       </div>
-      <div className="col-span-2 lg:col-span-1">
+      <div className="col-span-2 lg:col-span-1 w-auto">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: 0.4 }}
           variants={childrenAnimation}
-          className="about-content"
+          className="about-content w-auto"
         >
           {/* <h3>
             Hi, I am <span className="text-primary">Hensell De La Rosa</span>
@@ -95,14 +95,12 @@ const AboutSection = () => {
               </li>
             )}
             {data.OpenTo && (
-              <li className="text-lg">
-                <strong className="inline-block min-w-[120px] font-medium">
-                  Open To{" "}
-                </strong>
-                : {data.OpenTo}
+              <li className="grid grid-cols-[120px_1fr] items-start gap-0 text-lg">
+                <strong className="font-medium">Open To </strong>
+                <span className="-indent-3 break-words pl-3">: {data.OpenTo}</span>
               </li>
             )}
-              {data.Interests && (
+            {data.Interests && (
               <li className="text-lg">
                 <strong className="inline-block min-w-[120px] font-medium">
                   Interests{" "}
