@@ -67,11 +67,11 @@ const TechSkills = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: 0.2 * index }}
           variants={childrenAnimation}
-          className="min-w-0"
+          className="min-w-0 text-center"
           key={category.title}
         >
           <h3 className="mb-3 text-xl font-semibold">{category.title}</h3>
-          <ul className="space-y-1 text-base leading-relaxed">
+          <ul className="mx-auto list-inside space-y-1 text-base leading-relaxed text-center">
             {category.items.map((item) => (
               <li key={item}>{item}</li>
             ))}

@@ -1,4 +1,5 @@
 import Blog from "./Blog";
+import OtherProjectCard from "./OtherProjectCard";
 import Portfolio from "./Portfolio";
 import ProgressBar from "./ProgressBar";
 import ProgressCircle from "./ProgressCircle";
@@ -14,6 +15,7 @@ export {
   Service,
   TimelineItem,
   Portfolio,
+  OtherProjectCard,
   Review,
   Blog,
   SocialIcons,

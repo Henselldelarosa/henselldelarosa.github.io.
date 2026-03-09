@@ -1,26 +1,54 @@
 [
     {
         "id": 1,
-        "title": "Natour Project",
-        "subtitle": "Created by following Jonas Schmedtmann class",
-        "coverimage": "/images/portfolios/natour-image-1.png",
+        "title": "LadingIQ",
+        "subtitle": "Yard Management System (YMS) \nEnterprise logistics platform designed to manage yard operations including trailer inventory, yard moves, and user access control.Key capabilities include: \n• Trailer inventory tracking with status and location management \n• Multi-step move workflow for relocating trailers across yard locations \n• Role-based access control with fine-grained permission management \n• User and account management system \n• Mobile interface for yard drivers to manage trailers and moves \nBuilt from real logistics workflows observed in yard operations.",
+        "coverimage": "/images/portfolios/yms-dashboard.png",
         "imagegallery": [
-            "/images/portfolios/natour-image-2.png",
-            "/images/portfolios/natour-image-3.png",
-            "/images/portfolios/natour-image-4.png",
-            "/images/portfolios/natour-image-5.png",
-            "/images/portfolios/natour-image-6.png",
-            "/images/portfolios/natour-image-7.png",
-            "/images/portfolios/natour-image-8.png"
+            "/images/portfolios/yms-dashboard.png",
+            "/images/portfolios/yms-trailer-inventory.png",
+            "/images/portfolios/yms-move-workflow.png",
+            "/images/portfolios/yms-permissions.png",
+            "/images/portfolios/yms-role-management.png",
+            "/images/portfolios/yms-driver-mobile.png"
         ],
         "videogallery": false,
         "url": "",
-        "filters": ["css","html", "scss"]
+        "filters": [
+            "NEXT JS",
+            "TAILWIND",
+            "REACT NATIVE",
+            "PYTHON",
+            "SQL"
+        ]
     },
     {
         "id": 2,
+        "title": "Courset",
+        "subtitle": "A production education platform developed while working with a startup, featuring course management, user authentication, and dynamic content delivery. Built using React, Python, and SCSS.",
+        "coverimage": "/images/portfolios/courset-image-1.png",
+        "imagegallery": [
+            "/images/portfolios/courset-image-1.png",
+            "/images/portfolios/courset-image-2.png",
+            "/images/portfolios/courset-image-3.png",
+            "/images/portfolios/courset-image-4.png",
+            "/images/portfolios/courset-image-5.png",
+            "/images/portfolios/courset-image-6.png",
+            "/images/portfolios/courset-image-7.png",
+            "/images/portfolios/courset-image-8.png"
+        ],
+        "videogallery": false,
+        "url": "",
+        "filters": [
+            "python",
+            "scss",
+            "react"
+        ]
+    },
+    {
+        "id": 3,
         "title": "Question-Overflow",
-        "subtitle": "Stack-Overflow clone for general questions",
+        "subtitle": "A Stack Overflow–style Q&A platform where users can post questions, answer discussions, and interact with community content. Built with React and Python with a custom backend API.",
         "coverimage": "/images/portfolios/question-overflow-image-1.png",
         "imagegallery": [
             "/images/portfolios/question-overflow-image-1.png",
@@ -32,33 +60,17 @@
             "/images/portfolios/question-overflow-image-7.png"
         ],
         "videogallery": false,
-        "url": "https://question-overflow-2s4k.onrender.com/",
-        "filters": ["react", "python", "css"]
-    },
-    {
-        "id": 3,
-        "title": "Airbnb Clone",
-        "subtitle": "This is my first full stack project from bootcamp",
-        "coverimage": "/images/portfolios/airbnb-image-1.png",
-        "imagegallery": [
-            "/images/portfolios/airbnb-image-1.png",
-            "/images/portfolios/airbnb-image-2.png",
-            "/images/portfolios/airbnb-image-3.png",
-            "/images/portfolios/airbnb-image-4.png",
-            "/images/portfolios/airbnb-image-5.png",
-            "/images/portfolios/airbnb-image-6.png",
-            "/images/portfolios/airbnb-image-7.png",
-            "/images/portfolios/airbnb-image-8.png",
-            "/images/portfolios/airbnb-image-9.png"
-        ],
-        "videogallery": false,
-        "url": "https://air-bnb-clone-zhb4.onrender.com",
-        "filters": ["express", "react", "node", "css"]
+        "url": "",
+        "filters": [
+            "react",
+            "python",
+            "css"
+        ]
     },
     {
         "id": 4,
         "title": "Facebook Clone",
-        "subtitle": "This is my capstone project from bootcamp",
+        "subtitle": "A social media application supporting user profiles, posts, likes, and comments with a dynamic frontend and REST API backend. Built using React, Python, and SCSS.",
         "coverimage": "/images/portfolios/facebook-image-1.png",
         "imagegallery": [
             "/images/portfolios/facebook-image-1.png",
@@ -73,27 +85,36 @@
             "/images/portfolios/facebook-image-10.png"
         ],
         "videogallery": false,
-        "url": "https://sagebook.onrender.com",
-        "filters": ["react", "python", "scss"]
+        "url": "",
+        "filters": [
+            "react",
+            "python",
+            "scss"
+        ]
     },
     {
-        "id": 5,
-        "title": "Courset",
-        "subtitle": "This is a startup compnay that I worked for a year",
-        "coverimage": "/images/portfolios/courset-image-1.png",
+        "id": 3,
+        "title": "Airbnb Clone",
+        "subtitle": "A full-stack booking platform allowing users to browse listings, view property details, and manage reservations. Built with React, Node.js, Express, and CSS.",
+        "coverimage": "/images/portfolios/airbnb-image-1.png",
         "imagegallery": [
-            "/images/portfolios/courset-image-1.png",
-            "/images/portfolios/courset-image-2.png",
-            "/images/portfolios/courset-image-3.png",
-            "/images/portfolios/courset-image-4.png",
-            "/images/portfolios/courset-image-5.png",
-            "/images/portfolios/courset-image-6.png",
-            "/images/portfolios/courset-image-7.png",
-            "/images/portfolios/courset-image-8.png"
+            "/images/portfolios/airbnb-image-1.png",
+            "/images/portfolios/airbnb-image-2.png",
+            "/images/portfolios/airbnb-image-3.png",
+            "/images/portfolios/airbnb-image-4.png",
+            "/images/portfolios/airbnb-image-5.png",
+            "/images/portfolios/airbnb-image-6.png",
+            "/images/portfolios/airbnb-image-7.png",
+            "/images/portfolios/airbnb-image-8.png",
+            "/images/portfolios/airbnb-image-9.png"
         ],
         "videogallery": false,
-        "url": "https://coursect.org/",
-        "filters": ["python", "scss", "react"]
+        "url": "https://air-bnb-clone-zhb4.onrender.com",
+        "filters": [
+            "express",
+            "react",
+            "node",
+            "css"
+        ]
     }
-
 ]

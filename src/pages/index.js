@@ -4,12 +4,14 @@ import {
   AboutSection,
   BlogSection,
   ContactSection,
+  FeaturedYMSSection,
   HeroSection,
   PortfoliosSection,
   ResumeSection,
   ReviewsSection,
   ServicesSection,
   SkillsSection,
+  SystemDesignSection,
 } from "../components/containers";
 import { Layout } from "../components/layout";
 import { SectionHeading } from "../components/utils";
@@ -26,11 +28,32 @@ const index = ({ pages }) => {
       <title>Hensell-Portfolio</title>
     </Head>
 
-    {/* Start Hero Section */}
-    <Section name="section-home">
-      <HeroSection blurred />
-    </Section>
-    {/* End Hero Section */}
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_#10204a_0%,_#081229_45%,_#050c1d_100%)] text-white">
+      <main className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-6 py-12 md:px-10 lg:px-12">
+        <Section name="section-home">
+          <HeroSection />
+        </Section>
+
+        <div className="h-px w-full bg-white/10" />
+
+        <Section name="section-yms">
+          <FeaturedYMSSection />
+        </Section>
+
+        <div className="h-px w-full bg-white/10" />
+
+        <Section name="section-portfolios">
+          <PortfoliosSection />
+        </Section>
+
+        <div className="h-px w-full bg-white/10" />
+
+        <Section name="section-system-design">
+          <SystemDesignSection />
+        </Section>
+      </main>
+
+      <div className="h-px w-full bg-white/10" />
 
     {/* Start About Section */}
     <Section
@@ -56,18 +79,6 @@ const index = ({ pages }) => {
     </Section>
     {/* End Skills Section */}
 
-    {/* Start Service Section */}
-    {/* <Section
-      name="section-service"
-      className="services-section pt-24 lg:pt-28 xl:pt-32"
-    >
-      <div className="container mx-auto">
-        <SectionHeading animated={false} title="My Services" watermark="Services" />
-        <ServicesSection />
-      </div>
-    </Section> */}
-    {/* End Service Section */}
-
     {/* Start Resume Section */}
     <Section
       name="section-resume"
@@ -79,18 +90,6 @@ const index = ({ pages }) => {
       </div>
     </Section>
     {/* End Resume Section */}
-
-    {/* Start Portfolios Section */}
-    <Section
-      name="section-portfolios"
-      className="portfolios-section pt-24 lg:pt-28 xl:pt-32"
-    >
-      <div className="container mx-auto">
-        <SectionHeading animated={false} title="My Works" watermark="Works" />
-        <PortfoliosSection />
-      </div>
-    </Section>
-    {/* End Portfolios Section */}
 
     {/* Start Reviews Section */}
     <Section
@@ -129,6 +128,7 @@ const index = ({ pages }) => {
     {/* End Contact Section */}
 
     <span className="block pb-24 lg:pb-28 xl:pb-32"></span>
+    </div>
   </Layout>
 );
 };

@@ -1,153 +1,44 @@
-import { RiArrowDownLine } from "react-icons/ri";
 import { Link } from "react-scroll";
-import { SocialIcons } from "../elements";
-import { motion } from "framer-motion";
-import { childrenAnimation } from "../../lib/motion";
-import { useQuery } from "react-query";
-import { getInformation } from "../../fetchers";
 
-const HeroSection = ({ blurred, scroll = true, typed = true }) => {
-  const { data } = useQuery("information", getInformation);
-
-  if (!data) return null;
-
+const HeroSection = () => {
   return (
-    <div className="herosection relative overflow-hidden">
-      {!blurred && (
-        <div className="herosection-bg absolute left-0 top-0 h-full w-full"></div>
-      )}
-      <div
-        className={`herosection-content relative z-20 bg-grey-darken  ${blurred ? "bg-opacity-20" : "bg-opacity-90"
-          }`}
-      >
-        <div className="container relative mx-auto">
-          <div className="flex min-h-screen w-full items-center justify-center">
-            <div className="herosection-content w-full py-20 text-center md:w-3/4">
-              <motion.h1
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.1 }}
-                variants={childrenAnimation}
-                className="mb-2 text-heading"
-              >
-                <span className="text-primary">Hensell De La Rosa</span>
-              </motion.h1>
-              <motion.p
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.2 }}
-                variants={childrenAnimation}
-                className="mb-2 text-lg font-medium opacity-90"
-              >
-                Full-Stack Software Engineer — UI-Focused | React, Tailwind, Python &amp; Flask
-              </motion.p>
-              <motion.p
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.3 }}
-                variants={childrenAnimation}
-                className="lead mb-5 max-w-2xl mx-auto"
-              >
-                I build workflow-heavy web apps with clean UI and secure backend systems (RBAC, JWT, SQL).
-              </motion.p>
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.35 }}
-                variants={childrenAnimation}
-                className="mb-5 flex flex-wrap items-center justify-center gap-3"
-              >
-                <Link
-                  to="section-portfolios"
-                  spy={true}
-                  smooth={true}
-                  offset={-74}
-                  duration={1000}
-                  className="btn"
-                >
-                  <span>View Projects</span>
-                </Link>
-                <a
-                  href="/Hensells-Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-transparent"
-                >
-                  <span> Resume (PDF)</span>
-                </a>
-              </motion.div>
-              <motion.p
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.4 }}
-                variants={childrenAnimation}
-                className="mb-5 text-sm opacity-80 max-w-xl mx-auto"
-              >
-                Built a Yard Management System supporting role-based permissions and multi-user operational workflows.
-
-              </motion.p>
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.2 }}
-                variants={childrenAnimation}
-                className="herosection-imagewrapper relative mb-5 inline-block overflow-hidden rounded-full align-middle"
-              >
-                <span className="herosection-imageanimation absolute left-0 top-0 z-10 h-full w-full rounded-full bg-gradient-to-tr from-primary to-transparent"></span>
-                <div className="herosection-image fiximage relative z-20 inline-block h-[150px] w-[150px] overflow-hidden rounded-full border-6 border-primary border-opacity-10 align-middle">
-                  <img
-                    src={data.thumbImage}
-                    alt={data.fullName}
-                    height={150}
-                    width={150}
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-              </motion.div>
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.8 }}
-                variants={childrenAnimation}
-                className="herosection-socialicons mt-7 text-center"
-              >
-                <SocialIcons data={data.socialAddress} />
-              </motion.div>
-            </div>
-          </div>
-          {scroll ? (
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: 1 }}
-              variants={childrenAnimation}
-              className="herosection-bottom absolute left-0 top-auto bottom-10 w-full justify-between text-center"
+    <section className="space-y-5">
+      <div className="rounded-sm border border-white/10 bg-white/5 px-6 py-14 shadow-[0_0_0_1px_rgba(255,255,255,0.03),0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur-sm md:px-12">
+        <div className="mx-auto max-w-4xl text-center">
+          <h1 className="text-4xl font-bold tracking-tight text-white md:text-6xl">
+            Hensell De La Rosa
+          </h1>
+          <p className="mt-4 text-lg text-white/80 md:text-2xl">
+            Full-Stack Software Engineer · React, Tailwind, Python & Flask
+          </p>
+          <div className="mx-auto mt-6 h-px w-32 bg-white/20" />
+          <p className="mx-auto mt-8 max-w-3xl text-base leading-8 text-white/85 md:text-2xl md:leading-10">
+            I build workflow-heavy operational systems with clean interfaces and
+            secure backend architecture.
+          </p>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <Link
+              to="section-yms"
+              spy={true}
+              smooth={true}
+              offset={-74}
+              duration={1000}
+              className="cursor-pointer rounded-md bg-blue-600 px-7 py-3 text-base font-semibold shadow-lg shadow-blue-900/30 transition hover:bg-blue-500 md:px-9 md:py-4 md:text-xl"
             >
-              <Link
-                activeClass="active"
-                to="section-about"
-                spy={true}
-                smooth={true}
-                offset={-74}
-                duration={1000}
-                className="cursor-pointer text-xs font-medium uppercase tracking-widest transition-all hover:text-primary"
-              >
-                <RiArrowDownLine className="inline animate-bounce text-base" />
-                <span className="pl-2">Scroll Down</span>
-              </Link>
-            </motion.div>
-          ) : null}
+              View Projects
+            </Link>
+            <a
+              href="/Hensells-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md border border-white/50 px-7 py-3 text-base font-semibold text-white transition hover:bg-white/10 md:px-9 md:py-4 md:text-xl"
+            >
+              Download Resume
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

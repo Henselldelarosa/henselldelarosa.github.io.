@@ -52,7 +52,16 @@ const Portfolio = ({
       </div>
       <div className="portfolio-content mt-4">
         <h5 className="mb-0">{title}</h5>
-        <p>{subtitle}</p>
+        <p className="whitespace-pre-line">
+          {subtitle.split("Yard Management System (YMS)").map((part, i, parts) => (
+            <span key={i}>
+              {part}
+              {i < parts.length - 1 && (
+                <strong>Yard Management System (YMS)</strong>
+              )}
+            </span>
+          ))}
+        </p>
       </div>
       {imagegallery && (
         <Portal>
