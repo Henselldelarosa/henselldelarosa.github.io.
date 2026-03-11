@@ -11,7 +11,6 @@ import {
   ReviewsSection,
   ServicesSection,
   SkillsSection,
-  SystemDesignSection,
 } from "../components/containers";
 import { Layout } from "../components/layout";
 import { SectionHeading } from "../components/utils";
@@ -44,12 +43,6 @@ const index = ({ pages }) => {
 
         <Section name="section-portfolios">
           <PortfoliosSection />
-        </Section>
-
-        <div className="h-px w-full bg-white/10" />
-
-        <Section name="section-system-design">
-          <SystemDesignSection />
         </Section>
       </main>
 
