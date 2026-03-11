@@ -30,7 +30,7 @@ const index = ({ pages }) => {
 
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,_#10204a_0%,_#081229_45%,_#050c1d_100%)] text-white">
       <main className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-6 py-12 md:px-10 lg:px-12">
-        <Section name="section-home">
+        <Section name="section-home" className="mt-24 md:mt-28">
           <HeroSection />
         </Section>
 
