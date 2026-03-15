@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link, Element } from "react-scroll";
 
 const ymsScreenshots = [
   { title: "Move Dashboard", image: "/images/portfolios/yms-dashboard.png" },
@@ -7,9 +7,7 @@ const ymsScreenshots = [
   { title: "Move Workflow", image: "/images/portfolios/yms-move-workflow.png" },
   { title: "Dock Selector", image: "/images/portfolios/yms-door-selector.png" },
   { title: "Role Management", image: "/images/portfolios/yms-role-management.png" },
-  { title: "Permissions", image: "/images/portfolios/yms-permissions.png" },
   { title: "Driver Mobile", image: "/images/portfolios/yms-driver-mobile.png" },
-  { title: "Move History", image: "/images/portfolios/yms-move-history.png" },
 ];
 
 const techStack = [
@@ -48,11 +46,11 @@ const FeaturedYMSSection = () => {
   return (
     <section
       id="section-featured-yms"
-      className="bg-[#0b1220] px-6 py-20 text-white md:px-10"
+      className="px-6 py-20 text-white md:px-10"
     >
       <div className="mx-auto max-w-7xl">
-        {/* Top Section */}
-        <div className="grid items-center gap-10 lg:grid-cols-2">
+        {/* Hero */}
+        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_1.15fr]">
           <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
               Featured Project
@@ -85,12 +83,15 @@ const FeaturedYMSSection = () => {
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <a
-                href="#yms-architecture"
-                className="rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+              <Link
+                to="yms-architecture"
+                smooth={true}
+                offset={-74}
+                duration={700}
+                className="cursor-pointer rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90"
               >
                 View Architecture
-              </a>
+              </Link>
 
               <Link
                 to="section-portfolios"
@@ -104,16 +105,32 @@ const FeaturedYMSSection = () => {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur">
+          <div className="rounded-[28px] border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur">
             <img
               src="/images/portfolios/yms-dashboard.png"
               alt="Enterprise Yard Management System dashboard"
-              className="w-full rounded-2xl object-cover"
+              className="h-full w-full rounded-[20px] object-cover"
             />
           </div>
         </div>
 
-        {/* Features */}
+        {/* Impact strip */}
+        <div className="mt-14 grid gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 md:grid-cols-3">
+          <div>
+            <p className="text-xs uppercase tracking-[0.2em] text-white/50">System Type</p>
+            <p className="mt-2 text-lg font-semibold text-white">Operational Logistics Platform</p>
+          </div>
+          <div>
+            <p className="text-xs uppercase tracking-[0.2em] text-white/50">Focus</p>
+            <p className="mt-2 text-lg font-semibold text-white">Trailer Moves, RBAC, Yard Workflows</p>
+          </div>
+          <div>
+            <p className="text-xs uppercase tracking-[0.2em] text-white/50">Built With</p>
+            <p className="mt-2 text-lg font-semibold text-white">React, Tailwind, Flask, PostgreSQL</p>
+          </div>
+        </div>
+
+        {/* Core Features */}
         <div className="mt-20">
           <div className="mb-10 max-w-2xl">
             <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
@@ -139,7 +156,7 @@ const FeaturedYMSSection = () => {
           </div>
         </div>
 
-        {/* Screenshot Gallery */}
+        {/* Product Screens */}
         <div className="mt-20">
           <div className="mb-10 max-w-2xl">
             <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
@@ -175,55 +192,81 @@ const FeaturedYMSSection = () => {
           </div>
         </div>
 
-        {/* System Overview */}
-        <div
-          id="yms-architecture"
-          className="mt-20 grid gap-8 lg:grid-cols-2"
-        >
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
-            <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-              Problem
-            </p>
-            <h3 className="mb-4 text-2xl font-bold">Why this system exists</h3>
-            <p className="leading-7 text-white/75">
-              Yard operations often depend on manual communication, whiteboards,
-              spreadsheets, and outdated workflows to track trailers and manage
-              moves. This system digitizes those processes to improve visibility,
-              coordination, and operational control across multiple roles.
-            </p>
-          </div>
+        {/* System Overview - quick-scan bullet list */}
+        <div className="mt-14 rounded-2xl border border-white/10 bg-white/5 p-6 md:p-8">
+          <h3 className="mb-4 text-xl font-bold md:text-2xl">System Overview</h3>
+          <ul className="grid gap-2 text-white/85 sm:grid-cols-2 lg:grid-cols-3">
+            <li className="flex items-center gap-2">
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+              Trailer inventory tracking
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+              Move workflow engine
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+              Role-based access control
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+              Driver mobile interface
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+              Operational analytics dashboard
+            </li>
+          </ul>
+        </div>
 
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
-            <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-              Architecture
-            </p>
-            <h3 className="mb-4 text-2xl font-bold">How the system works</h3>
+        {/* Problem + Architecture - scroll target for View Architecture */}
+        <Element name="yms-architecture" id="yms-architecture">
+          <div className="mt-20 grid gap-8 lg:grid-cols-2">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+                Problem
+              </p>
+              <h3 className="mb-4 text-2xl font-bold">Why this system exists</h3>
+              <p className="leading-7 text-white/75">
+                Yard operations often depend on manual communication, whiteboards,
+                spreadsheets, and outdated workflows to track trailers and manage
+                moves. This system digitizes those processes to improve visibility,
+                coordination, and operational control across multiple roles.
+              </p>
+            </div>
 
-            <div className="space-y-4 text-sm text-white/80">
-              <div className="rounded-xl border border-white/10 bg-[#111827] p-4">
-                <strong className="block text-white">Frontend</strong>
-                React dashboard + Tailwind CSS for operations staff
-              </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+                Architecture
+              </p>
+              <h3 className="mb-4 text-2xl font-bold">How the system works</h3>
 
-              <div className="flex justify-center text-white/40">↓</div>
+              <div className="space-y-4 text-sm text-white/80">
+                <div className="rounded-xl border border-white/10 bg-[#111827] p-4">
+                  <strong className="block text-white">Frontend</strong>
+                  React dashboard + Tailwind CSS for operations staff
+                </div>
 
-              <div className="rounded-xl border border-white/10 bg-[#111827] p-4">
-                <strong className="block text-white">Backend</strong>
-                Flask REST API handling workflows, permissions, and system logic
-              </div>
+                <div className="flex justify-center text-white/40">↓</div>
 
-              <div className="flex justify-center text-white/40">↓</div>
+                <div className="rounded-xl border border-white/10 bg-[#111827] p-4">
+                  <strong className="block text-white">Backend</strong>
+                  Flask REST API handling workflows, permissions, and system logic
+                </div>
 
-              <div className="rounded-xl border border-white/10 bg-[#111827] p-4">
-                <strong className="block text-white">Database</strong>
-                PostgreSQL relational models for trailers, moves, users, roles,
-                permissions, and history
+                <div className="flex justify-center text-white/40">↓</div>
+
+                <div className="rounded-xl border border-white/10 bg-[#111827] p-4">
+                  <strong className="block text-white">Database</strong>
+                  PostgreSQL relational models for trailers, moves, users, roles,
+                  permissions, and history
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </Element>
 
-        {/* Key Engineering Notes */}
+        {/* Engineering Highlights */}
         <div className="mt-20 rounded-3xl border border-white/10 bg-white/5 p-8">
           <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
             Engineering Highlights
@@ -234,7 +277,7 @@ const FeaturedYMSSection = () => {
           </h3>
 
           <div className="grid gap-6 md:grid-cols-2">
-            <div>
+            <div className="rounded-2xl border border-white/10 bg-[#111827] p-6">
               <h4 className="mb-3 text-lg font-semibold">Core Data Models</h4>
               <ul className="space-y-2 text-white/75">
                 <li>• Users</li>
@@ -247,7 +290,7 @@ const FeaturedYMSSection = () => {
               </ul>
             </div>
 
-            <div>
+            <div className="rounded-2xl border border-white/10 bg-[#111827] p-6">
               <h4 className="mb-3 text-lg font-semibold">Workflow Coverage</h4>
               <ul className="space-y-2 text-white/75">
                 <li>• Trailer inventory monitoring</li>
