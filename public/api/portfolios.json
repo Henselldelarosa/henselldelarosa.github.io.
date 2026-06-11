@@ -25,6 +25,37 @@
     },
     {
         "id": 2,
+        "title": "Bilingual Wedding Site with Live Admin CMS",
+        "subtitle": "A bilingual (English/Spanish) wedding website with a live admin CMS for managing guest lists, RSVPs, event details, and photo galleries. Built with Next.js App Router and Server Components on top of Supabase/Postgres, with type-safe forms via Zod.",
+        "coverimage": "/images/portfolios/wedding-image-1.png",
+        "imagegallery": [
+            "/images/portfolios/wedding-image-1.png",
+            "/images/portfolios/wedding-image-2.png",
+            "/images/portfolios/wedding-image-3.png",
+            "/images/portfolios/wedding-image-4.png",
+            "/images/portfolios/wedding-image-5.png",
+            "/images/portfolios/wedding-image-6.png",
+            "/images/portfolios/wedding-image-7.png",
+            "/images/portfolios/wedding-image-8.png",
+            "/images/portfolios/wedding-image-9.png",
+            "/images/portfolios/wedding-image-10.png",
+            "/images/portfolios/wedding-image-11.png",
+            "/images/portfolios/wedding-image-12.png"
+        ],
+        "videogallery": false,
+        "url": "https://oh-wedding.vercel.app/",
+        "filters": [
+            "NEXT JS",
+            "TYPESCRIPT",
+            "TAILWIND",
+            "SUPABASE",
+            "POSTGRESQL",
+            "ZOD",
+            "VERCEL"
+        ]
+    },
+    {
+        "id": 3,
         "title": "Courset",
         "subtitle": "A production education platform developed while working with a startup, featuring course management, user authentication, and dynamic content delivery. Built using React, Python, and SCSS.",
         "coverimage": "/images/portfolios/courset-image-1.png",
@@ -41,13 +72,22 @@
         "videogallery": false,
         "url": "",
         "filters": [
-            "python",
-            "scss",
-            "react"
+            "Next.js",
+            "React",
+            "Tailwind",
+            "SCSS",
+            "Redux",
+            "Webpack",
+            "Python",
+            "PostgreSQL",
+            "REST API",
+            "JWT",
+            "Gemini AI",
+            "ChatGPT AI"
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Question-Overflow",
         "subtitle": "A Stack Overflow–style Q&A platform where users can post questions, answer discussions, and interact with community content. Built with React and Python with a custom backend API.",
         "coverimage": "/images/portfolios/question-overflow-image-1.png",
@@ -69,7 +109,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Facebook Clone",
         "subtitle": "A social media application supporting user profiles, posts, likes, and comments with a dynamic frontend and REST API backend. Built using React, Python, and SCSS.",
         "coverimage": "/images/portfolios/facebook-image-1.png",
@@ -94,7 +134,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 6,
         "title": "Airbnb Clone",
         "subtitle": "A full-stack booking platform allowing users to browse listings, view property details, and manage reservations. Built with React, Node.js, Express, and CSS.",
         "coverimage": "/images/portfolios/airbnb-image-1.png",

@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, Element } from "react-scroll";
+import FsLightbox from "fslightbox-react";
+import { Portal } from "react-portal";
 
 const ymsScreenshots = [
   { title: "Move Dashboard", image: "/images/portfolios/yms-dashboard.png" },
@@ -43,6 +45,14 @@ const features = [
 ];
 
 const FeaturedYMSSection = () => {
+  const [lightboxToggler, setLightboxToggler] = useState(false);
+  const [lightboxSlide, setLightboxSlide] = useState(1);
+
+  const openScreenshot = (idx) => {
+    setLightboxSlide(idx + 1);
+    setLightboxToggler((t) => !t);
+  };
+
   return (
     <section
       id="section-featured-yms"
@@ -168,20 +178,27 @@ const FeaturedYMSSection = () => {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {ymsScreenshots.map((shot) => (
+            {ymsScreenshots.map((shot, idx) => (
               <div
                 key={shot.title}
-                className="overflow-hidden rounded-2xl border border-white/10 bg-white/5"
+                className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-colors hover:border-white/20"
               >
-                <img
-                  src={shot.image}
-                  alt={shot.title}
-                  className="h-[220px] w-full object-cover"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = "/images/portfolios/yms-dashboard.png";
-                  }}
-                />
+                <button
+                  type="button"
+                  onClick={() => openScreenshot(idx)}
+                  aria-label={`Expand ${shot.title}`}
+                  className="block w-full overflow-hidden !h-auto !min-h-0 !rounded-none !border-0 !bg-transparent !p-0"
+                >
+                  <img
+                    src={shot.image}
+                    alt={shot.title}
+                    className="h-[220px] w-full cursor-zoom-in object-cover"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = "/images/portfolios/yms-dashboard.png";
+                    }}
+                  />
+                </button>
                 <div className="p-4">
                   <h4 className="text-sm font-semibold text-white/90">
                     {shot.title}
@@ -304,6 +321,14 @@ const FeaturedYMSSection = () => {
           </div>
         </div>
       </div>
+
+      <Portal>
+        <FsLightbox
+          toggler={lightboxToggler}
+          sources={ymsScreenshots.map((s) => s.image)}
+          slide={lightboxSlide}
+        />
+      </Portal>
     </section>
   );
 };
